@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="pivot_series.css">
+    <title>Pivote en series aritméticas y geométricas</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html">DONUT CAT</a></h1>
+    </header>
+    <main>
+        <section>
+            <div class="titled-section">
+                <header>
+                    <p>Introducción:</p>
+                </header>
+                <p>El pivote en una serie se refiere al punto en donde la suma de los elementos de la izquierda (incluyendo el actual) es igual al de la derecha.<br>No todas las series poseen pivote, aunque si conocemos previamente el tipo de serie en el que estamos trabajando podemos saber que características debe poseer para tener uno.</p>
+            </div>
+            <div id="serie">
+                <svg id="number-line" xmlns="http://www.w3.org/2000/svg">
+                    <text id="left-sum">0</text>
+                    <text id="right-sum">0</text>
+                    <line id="main-line" stroke="#1D1616" stroke-width="12" ></line>
+                    <circle id="circle" r="15" fill="#8E1616"/>
+                </svg>
+                <div>
+                    <button id="left"><</button><button id="right">></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Hecho con 🤍 en El Salvador </p>
+        <a href="https://github.com/GerardoAJF" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+    </footer>
+    <script src="../../script.js"></script>
+    <script src="pivot_series.js"></script>
+</body>
+</html>

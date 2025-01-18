@@ -27,6 +27,11 @@ h1 {
     margin: 10px;
 }
 
+h1 a {
+    color: #1D1616;
+    text-decoration: none;
+}
+
 h2 {
     font-size: 2em;
     display: inline-block;
@@ -203,4 +208,45 @@ footer a {
     #articles article {
         min-width: 300px;
     }
+}
+
+
+.titled-section header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    
+    margin-bottom: 30px;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.titled-section header p {
+    position: relative;
+    padding: 10px;
+
+    background-color: #8E1616;
+    color: #EEEEEE;
+    border: 5px double #EEEEEE
+}
+
+.titled-section header p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    
+    width: 50px; /*Initial width, resize in js*/
+    height: 1px;
+    z-index: -1;
+    
+    border: 2px solid #8E1616;
+}
+
+.titled-section p {
+    font-size: 1.2em;
 }
